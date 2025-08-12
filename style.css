@@ -1,0 +1,77 @@
+/* Reset básico e fonte */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #2c3e50;
+}
+
+/* Formulários */
+form {
+    margin-bottom: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+input, select, button {
+    font-size: 16px;
+    padding: 8px;
+    margin: 5px 10px 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1c5980;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Alerta estoque baixo */
+tbody tr[style*="background-color: rgb(248, 215, 218)"] {
+    font-weight: bold;
+    color: #a94442;
+}
+
+/* Placeholder escuro */
+input::placeholder {
+    color: #aaa;
+}

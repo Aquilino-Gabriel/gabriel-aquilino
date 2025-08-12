@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Controle de Estoque do Bar</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Controle de Estoque</h1>
+
+    <h2>Cadastrar Produto</h2>
+    <form id="formCadastro">
+        <input type="text" id="nomeProduto" placeholder="Nome do produto" required>
+        <input type="number" id="quantidadeProduto" placeholder="Quantidade inicial" required min="0">
+        <input type="text" id="unidadeProduto" placeholder="Unidade (ml, garrafa, etc)" required>
+        <input type="number" id="minimoProduto" placeholder="Estoque mínimo (padrão 5)" min="0">
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <h2>Registrar Entrada/Saída</h2>
+    <form id="formMovimentacao">
+        <select id="produtoSelecionado"></select>
+        <input type="number" id="quantidadeMovimentacao" placeholder="Quantidade" required min="1">
+        <select id="tipoMovimentacao">
+            <option value="entrada">Entrada</option>
+            <option value="saida">Saída</option>
+        </select>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <h2>Estoque Atual</h2>
+    <table border="1" id="tabelaEstoque">
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Unidade</th>
+                <th>Estoque Mínimo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Produtos aparecerão aqui -->
+        </tbody>
+    </table>
+
+    <script src="estoque.js"></script>
+</body>
+</html>
